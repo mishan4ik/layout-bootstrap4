@@ -1,0 +1,454 @@
+		/* обнуляем падинги и марджины */
+*{
+	margin: 0px;
+	padding:0px;
+}
+				/* добавляем шрифты в проект */
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Asap', sans-serif;
+	font-family: 'Playfair Display', serif;
+	font-family: 'PT Sans', sans-serif;
+}
+			/* header - задаем фон */
+header{
+	background:url('../img/bg.jpg') no-repeat ;
+	background-size: 100%;
+	padding-top: 50px; 
+}
+			/* container - задаем ширину */ 
+.container{
+	max-width: 1020px;
+	margin: 0px auto;
+}
+			/* выравниваем элементы шапки по центру */
+.blockheader{
+	display: flex;
+	justify-content: center;
+}
+			/* задаем левой части шапки 100пкс в право */ 
+.leftSide{
+	margin-right: 100px;
+}
+			/* редактируем текстовые блоки  левой части шапки*/
+.leftSide>h5{
+	font-size: 41px;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 15px;
+	display: inline-block;
+}
+.leftSide>h5+a{
+	font-size: 13px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+.leftSide>img{
+	float: left;
+	padding-right: 25px;
+}
+			/* редактируем правую сторону шапки */
+.rightSide{
+		margin-top: 30px;
+		width: 400px;
+		height: 40px;
+		background-color: #f5c506;
+		-webkit-box-shadow: -14px -12px 5px 0px rgba(157,133,26,1);
+		-moz-box-shadow: -14px -12px 5px 0px rgba(157,133,26,1);
+		box-shadow: -14px -12px 5px 0px rgba(157,133,26,1);
+
+}
+.rightSide>ul>li{
+	list-style-type: none;
+	display: inline-block;
+	line-height: 40px;
+}
+.rightSide>ul>img:first-child {
+	padding-left: 10px;
+}
+.rightSide>ul>img:nth-child(3) {
+	padding-left: 10px;
+}
+.rightSide>ul>img:nth-child(5) {
+	padding-left: 10px;
+}
+.rightSide>ul>li>a{
+	color: black;
+	font-size: 17px;
+	text-transform: uppercase;	
+}
+			/* редактируем левую стрелку в нижней части хедера */
+.leftheaderdownarrow{
+	width: 30px;
+	height: 50px;
+	background-color: #c7a30c;
+	line-height: 50px;
+	margin-top: 150px;
+}
+.videoheaderdown{
+	margin-top: 10px;
+	margin-right: 50px;
+	
+}
+			/* редактируем текст в нижней части хедера */
+.textheaderdown{
+	margin-top: 100px;
+}
+.textheaderdown>h5{
+	font-size: 60px;
+	color: #f5c506;
+	text-transform: uppercase;
+	font-family: 'Asap', sans-serif;
+	text-align: center;
+}
+.textheaderdown>h5>span{
+	color: white;
+}
+			/* редактируем правую стрелку в нижней части хедера*/
+.rightheaderdownarrow{
+	width: 30px;
+	height: 50px;
+	background-color: #c7a30c;
+	line-height: 50px;
+	margin-top: 150px;
+}
+			/* выравниваем видео и текст относительно центра макета.*/
+.headerdownContent{
+	display: flex;
+	justify-content: center;
+}
+		/* выравниваем нижнюю часть хедера */
+.blockdownheader{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding-top: 50px;
+}
+				/* firstSection - задаем первому блоку после хедера, цвет белый */
+.firstSection{
+	background-color: white;
+}
+				/* выравниваем контент первой секции по центру*/
+.firstsectionblock{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+				/* редактируем контент первой секции макета */
+.block_cloud,.block_leaf,.block_telegram{
+	text-align: center;
+	font-size: 27px;
+	text-transform: uppercase;
+}
+.block_cloud>img+p{
+	padding-top: 30px;
+	font-family: 'Playfair Display', serif;
+}
+.block_leaf>img+p{
+	padding-top: 30px;
+	font-family: 'Playfair Display', serif;	
+}
+.block_telegram>img+p{
+	padding-top: 30px;
+	font-family: 'Playfair Display', serif;
+}
+					/* задаем фон второй секции макета */
+.secondSection{
+	background-image: url('../img/secondsection.png');
+}
+					/* выравниваем контент по центру, секция 2 */
+.secondSectionblockcontent{
+	display: flex;
+	justify-content: center;
+}
+.secondsectiontextblock{
+	margin-top: 50px;
+}
+				/* редактируем заглавный текст второй секции макета */
+.secondsectiontextblock>h5{
+	color: white;
+	font-size: 37px;
+	text-transform: uppercase;
+}
+				/* работаем с контентом второй секции макета */
+.leftsecondSectionblock{
+	max-width: 300px;
+	background-color:#ec9e03;
+	margin-top: 50px;
+}
+.leftsecondSectionblock>p{
+	font-size: 15px;
+	color: white;
+	padding-top: 15px;
+	padding-left: 30px;
+}
+.leftsecondSection_Icon{
+	text-align: right;
+	margin-right: 20px;
+	margin-top: 55px;
+}
+.secondsectionCenterblock{
+	margin-top: 50px;
+}
+.secondsectionCenterblock>video{
+	display: block;
+	margin-right: 80px;
+}
+
+.secondsectionRightblock{
+	width: 300px;
+	background-color:#ec9e03;
+	margin-top: 50px;
+	
+}
+.rightblockdown_Icon{
+	text-align: right;
+	margin-right: 20px;
+}
+.rightblock_Icon{
+	text-align: center;
+}
+.rightnumberRightblock{
+	text-align: right;
+	margin-right: 20px;
+}
+.rightnumberRightblock>p{
+	color: white;
+	font-size: 25px;
+	font-family: 'Playfair Display', serif;	
+
+}
+.datesecondSection{
+	width: 100px;
+	background-color: #ddb101;
+}
+.datesecondSection>h5{
+	font-size: 50px;
+	color: white;
+	font-family: 'Playfair Display', serif;	
+	text-align: center;
+}
+.datesecondSection>h5+p{
+	text-align: center;
+	text-transform: uppercase;
+	color: #bd781f;
+
+}
+.lineSecondsection>hr{
+	background-color: #fae592;
+	height: 10px;
+}
+.lineSecondsection{
+	margin-top: 20px;
+}
+			/* задаем фон 3 секции макета */
+.thirdSection{
+	background-image: url('../img/thirdsection.png');
+}
+					/* редактируем заглавный текст 3 секции макета */
+.textCenterthirdSection{
+	margin-top: 100px;
+	text-align: center;
+}
+.textCenterthirdSection>h5{
+	color: #f5c506;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-family: 'PT Sans', sans-serif;
+}
+.content_thirdSection{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.leftSide_thirdSection{
+	display: flex;
+	justify-content: center;
+}
+.blockDesctop>img{
+	margin-right: 20px;
+}
+.blockIpad>img{
+	margin-top: 40px;
+
+}
+.blockmobile>img{
+	margin-top: 150px;
+	margin-left: 20px;
+}
+.rightSide_thirdSection{
+	margin-top: 40px;
+	margin-left: 100px;
+}
+.rightSide_thirdSection>ul>li{
+	font-size: 22px;
+	font-family: 'PT Sans', sans-serif;
+	color: #a9a9a7;
+	list-style-type: none;
+	list-style-image: url('../img/mark.png');
+	padding-left: 20px;
+	
+}
+					/* задаем фон фоотеру */
+footer{
+	background-image: url('../img/thirdsection.png');
+}
+.footerContainer{
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+.leftSidefooter{
+	display: flex;
+}
+.imgfooter{
+	padding-right: 20px;
+
+}
+.imgfooter+h5{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 26px;
+	color: white;
+	text-transform: uppercase;
+	padding-top: 25px;
+}
+.rightSidefooter{
+	margin-top: 30px;
+}
+.rightSidefooter>a{
+	color: white;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+}
+		/* медиа запросы */
+
+@media (max-width: 1600px){
+
+	.blockheader{
+		display: block;
+	}
+	.leftSide{
+		margin: 0px;
+	}
+	.leftSide>h5{
+		font-size: 30px;
+		display: block;
+		text-align: center;
+	}
+	.leftSide>img{
+		display: block;
+		float: none;
+		margin: 0px auto;
+		padding: 0px;
+	}
+	.leftSide>a{
+		display: none;
+	}
+	.rightSide{
+		width: 300px;
+		height: 35px;
+		-webkit-box-shadow: 0px 0px 0px 0px ;
+		-moz-box-shadow: 0px 0px 0px 0px ;
+		box-shadow: 0px 0px 0px 0px;
+		margin-top: 10px;
+		display: block;
+		margin: 0px auto;
+
+	}
+	.rightSide>ul>li>a{
+		font-size: 12px;
+	}
+	.headerdownContent{
+		display: block;
+	}
+	.blockdownheader{
+		margin: 0px;
+	}
+	.textheaderdown>h5>span{
+		display: none;
+	}
+	.textheaderdown>h5{
+		display: none;
+	}
+	.videoheaderdown>video{
+		width: 300px;
+		height: 250px;
+	}
+	.videoheaderdown{
+		margin: 0px;
+	}
+
+}
+@media (max-width: 1299px){
+	
+	.leftSide>img{
+		display: none;
+	}
+	.blockdownheader{
+		margin-top:-50px;
+	}
+}
+@media (max-width: 1033px){
+
+	.leftSide>h5{
+		display: none;
+	}
+	.firstsectionblock{
+		display: block;
+	}
+	.secondSectionblockcontent{
+		display: block;
+	}
+	.leftsecondSectionblock,.secondsectionRightblock{
+		display: block;
+		margin: 0px auto;
+	}
+	.secondsectionCenterblock{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+	.secondsectionCenterblock>video{
+		margin: 0px;
+	}
+	.lineSecondsection{
+		display: none;
+	}
+	.content_thirdSection{
+		display: block;
+	}
+	.rightSide_thirdSection{
+		display: flex;
+		justify-content: center;
+
+	}
+	.footerContainer{
+		display: block;
+		margin: 0px auto;
+	}
+	.leftSidefooter{
+		display: flex;
+		justify-content: center;
+	}
+	.rightSidefooter{
+		display: flex;
+		justify-content: center;
+	}
+
+}
+@media (max-width: 815px){
+	.leftSide>h5{
+		display: block;
+	}
+	.blockheader{
+		padding-bottom: 50px;
+	}
+	.blockdownheader{
+		display: none;
+	}
+
+}
